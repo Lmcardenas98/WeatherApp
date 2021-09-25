@@ -1,3 +1,73 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#input::-webkit-input-placeholder {
+    background-color: whitesmoke;
+}
+
+.handlers button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background: slategray;
+}
+
+.handlers * {
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    background: grey;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px
+
+}
+
+.container .city {
+    margin: 7px;
+}
+
+.container img {
+    padding-bottom: 5px;
+}
+
+.container .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: transparent;
+    border: none;
+}
